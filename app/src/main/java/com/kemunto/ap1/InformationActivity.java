@@ -7,6 +7,9 @@ import android.os.Bundle;
 import android.widget.TextView;
 
 public class InformationActivity extends AppCompatActivity {
+    private String[] dispatcher = new String[] {"Baraka Smith", "On His Way!",
+            "5 Minutes Away" };
+
     private TextView mPersonNameTextView;
     private TextView mYourLocationTextView;
     private TextView mItemSizeTextView;
