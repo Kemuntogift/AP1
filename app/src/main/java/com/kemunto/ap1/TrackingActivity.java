@@ -20,14 +20,23 @@ public class TrackingActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_tracking);
         mPersonNameEditText = (EditText) findViewById(R.id.personNameEditText);
+        mYourLocationEditText = (EditText) findViewById(R.id.yourLocationEditText);
+        mItemSizeEditText = (EditText) findViewById(R.id.itemSizeEditText);
+        mWhereToEditText = (EditText) findViewById(R.id.whereToEditText);
         mSubmitButton = (Button) findViewById(R.id.submitButton);
 
         mSubmitButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 String name = mPersonNameEditText.getText().toString();
+                String location = mYourLocationEditText.getText().toString();
+                String size = mItemSizeEditText.getText().toString();
+                String destination = mWhereToEditText.getText().toString();
                 Intent intent = new Intent(TrackingActivity.this, InformationActivity.class);
                 intent.putExtra("name", name);
+                intent.putExtra("location", location);
+                intent.putExtra("size", size);
+                intent.putExtra("destination", destination);
                 startActivity(intent);
             }
         });
