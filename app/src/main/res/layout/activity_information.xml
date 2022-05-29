@@ -7,6 +7,11 @@
     android:background="@color/orange"
     tools:context=".InformationActivity">
 
+    <ListView
+        android:id="@+id/listView"
+        android:layout_width="match_parent"
+        android:layout_height="197dp" />
+
     <TextView
         android:id="@+id/personNameTextView"
         android:layout_width="144dp"
@@ -56,4 +61,5 @@
         android:layout_marginEnd="100dp"
         android:layout_marginBottom="290dp"
         android:background="@color/colorTextIcons" />
+
 </RelativeLayout>
