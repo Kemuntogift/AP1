@@ -29,7 +29,7 @@
         android:textSize="20sp" />
 
     <EditText
-        android:id="@+id/personName"
+        android:id="@+id/personNameEditText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
@@ -45,7 +45,7 @@
         android:minHeight="48dp" />
 
     <EditText
-        android:id="@+id/yourLocation"
+        android:id="@+id/yourLocationEditText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
@@ -60,7 +60,7 @@
         android:minHeight="48dp" />
 
     <EditText
-        android:id="@+id/itemSize"
+        android:id="@+id/itemSizeEditText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
@@ -75,7 +75,7 @@
         android:minHeight="48dp" />
 
     <EditText
-        android:id="@+id/whereTo"
+        android:id="@+id/whereToEditText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
@@ -88,5 +88,19 @@
         android:ems="10"
         android:hint="Where To"
         android:minHeight="48dp" />
+
+    <Button
+        android:id="@+id/submitButton"
+        android:layout_width="151dp"
+        android:layout_height="48dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="145dp"
+        android:layout_marginEnd="115dp"
+        android:layout_marginBottom="70dp"
+        android:background="@color/colorAccent"
+        android:text="SUBMIT"
+        android:textColor="#000000" />
 
 </RelativeLayout>
