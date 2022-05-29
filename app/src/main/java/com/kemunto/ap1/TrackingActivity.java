@@ -11,6 +11,9 @@ import android.widget.EditText;
 public class TrackingActivity extends AppCompatActivity {
     private Button mSubmitButton;
     private EditText mPersonNameEditText;
+    private EditText mYourLocationEditText;
+    private EditText mItemSizeEditText;
+    private EditText mWhereToEditText;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
