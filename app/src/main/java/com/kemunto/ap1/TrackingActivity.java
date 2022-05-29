@@ -8,22 +8,21 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 
+import butterknife.BindView;
+import butterknife.ButterKnife;
+
 public class TrackingActivity extends AppCompatActivity {
-    private Button mSubmitButton;
-    private EditText mPersonNameEditText;
-    private EditText mYourLocationEditText;
-    private EditText mItemSizeEditText;
-    private EditText mWhereToEditText;
+    @BindView(R.id.submitButton) Button mSubmitButton;
+    @BindView(R.id.personNameEditText) EditText mPersonNameEditText;
+    @BindView(R.id.yourLocationEditText) EditText mYourLocationEditText;
+    @BindView(R.id.itemSizeEditText) EditText mItemSizeEditText;
+    @BindView(R.id.whereToEditText) EditText mWhereToEditText;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_tracking);
-        mPersonNameEditText = (EditText) findViewById(R.id.personNameEditText);
-        mYourLocationEditText = (EditText) findViewById(R.id.yourLocationEditText);
-        mItemSizeEditText = (EditText) findViewById(R.id.itemSizeEditText);
-        mWhereToEditText = (EditText) findViewById(R.id.whereToEditText);
-        mSubmitButton = (Button) findViewById(R.id.submitButton);
+        ButterKnife.bind(this);
 
         mSubmitButton.setOnClickListener(new View.OnClickListener() {
             @Override

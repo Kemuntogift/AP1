@@ -11,26 +11,25 @@ import android.widget.ListView;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import butterknife.BindView;
+import butterknife.ButterKnife;
+
 public class InformationActivity extends AppCompatActivity {
     private String[] dispatcher = new String[] {"Baraka Smith", "On His Way!",
             "5 Minutes Away" };
 
-    private ListView mListView;
-    private TextView mPersonNameTextView;
-    private TextView mYourLocationTextView;
-    private TextView mItemSizeTextView;
-    private TextView mWhereToTextView;
+    @BindView(R.id.listView) ListView mListView;
+    @BindView(R.id.personNameTextView) TextView mPersonNameTextView;
+    @BindView(R.id.yourLocationTextView) TextView mYourLocationTextView;
+    @BindView(R.id.itemSizeTextView) TextView mItemSizeTextView;
+    @BindView(R.id.whereToTextView) TextView mWhereToTextView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_information);
 
-        mListView = (ListView) findViewById(R.id.listView);
-        mPersonNameTextView = (TextView) findViewById(R.id.personNameTextView);
-        mYourLocationTextView = (TextView) findViewById(R.id.yourLocationTextView);
-        mItemSizeTextView = (TextView) findViewById(R.id.itemSizeTextView);
-        mWhereToTextView = (TextView) findViewById(R.id.whereToTextView);
+        ButterKnife.bind(this);
 
         ArrayAdapter adapter = new ArrayAdapter(this, android.R.layout.simple_list_item_1, dispatcher);
         mListView.setAdapter(adapter);

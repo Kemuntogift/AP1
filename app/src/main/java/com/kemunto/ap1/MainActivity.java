@@ -8,14 +8,18 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
 
+import butterknife.BindView;
+import butterknife.ButterKnife;
+
 public class MainActivity extends AppCompatActivity {
-    private Button mGetTrackingButton;
+    @BindView(R.id.getTrackingButton) Button mGetTrackingButton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        mGetTrackingButton = (Button) findViewById(R.id.getTrackingButton);
+        ButterKnife.bind(this);
+
         mGetTrackingButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
