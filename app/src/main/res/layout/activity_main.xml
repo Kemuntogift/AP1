@@ -20,10 +20,12 @@
         app:srcCompat="@drawable/courier" />
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/introduction"
         android:layout_width="223dp"
         android:layout_height="28dp"
-        android:text="TextView"
+        android:text="OnTheMove"
+        android:textSize="50sp"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
