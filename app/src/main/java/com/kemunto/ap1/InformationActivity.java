@@ -15,7 +15,13 @@ public class InformationActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_information);
+        mPersonNameTextView = (TextView) findViewById(R.id.pesronNameTextView);
+        mYourLocationTextView = (TextView) findViewById(R.id.yourLocationTextView);
+        mItemSizeTextView = (TextView) findViewById(R.id.itemSizeTextView);
+        mWhereToTextView = (TextView) findViewById(R.id.whereToTextView);
+
         Intent intent = getIntent();
         String location = intent.getStringExtra("location");
+        mLocationTextView.setText("Here are all the restaurants near: " + location);
     }
 }
