@@ -41,7 +41,7 @@
         android:layout_height="124dp"
         android:text="All in one parcel tracking partner. Tracking made easier and at the comfort of your phone."
         android:textColor="@color/orange"
-        android:textSize="34sp"
+        android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.704"

@@ -6,4 +6,9 @@
     android:layout_height="match_parent"
     tools:context=".TrackingActivity">
 
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/delivery" />
 </androidx.constraintlayout.widget.ConstraintLayout>
