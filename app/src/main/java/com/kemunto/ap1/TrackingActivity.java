@@ -11,7 +11,7 @@ import android.widget.EditText;
 import butterknife.BindView;
 import butterknife.ButterKnife;
 
-public class TrackingActivity extends AppCompatActivity {
+public class TrackingActivity extends AppCompatActivity implements View.OnClickListener{
     @BindView(R.id.submitButton) Button mSubmitButton;
     @BindView(R.id.personNameEditText) EditText mPersonNameEditText;
     @BindView(R.id.yourLocationEditText) EditText mYourLocationEditText;
@@ -24,9 +24,11 @@ public class TrackingActivity extends AppCompatActivity {
         setContentView(R.layout.activity_tracking);
         ButterKnife.bind(this);
 
-        mSubmitButton.setOnClickListener(new View.OnClickListener() {
+        mSubmitButton.setOnClickListener(this);
+    }
             @Override
             public void onClick(View v) {
+                if(v == mSubmitButton) {
                 String name = mPersonNameEditText.getText().toString();
                 String location = mYourLocationEditText.getText().toString();
                 String size = mItemSizeEditText.getText().toString();
@@ -38,6 +40,6 @@ public class TrackingActivity extends AppCompatActivity {
                 intent.putExtra("destination", destination);
                 startActivity(intent);
             }
-        });
+
     }
 }

@@ -11,8 +11,9 @@ import android.widget.Toast;
 import butterknife.BindView;
 import butterknife.ButterKnife;
 
-public class MainActivity extends AppCompatActivity {
-    @BindView(R.id.getTrackingButton) Button mGetTrackingButton;
+public class MainActivity extends AppCompatActivity implements View.OnClickListener {
+    @BindView(R.id.getTrackingButton)
+    Button mGetTrackingButton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -20,13 +21,15 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         ButterKnife.bind(this);
 
-        mGetTrackingButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Toast.makeText(MainActivity.this, "Let's go!", Toast.LENGTH_LONG).show();
-                Intent intent = new Intent(MainActivity.this, TrackingActivity.class);
-                startActivity(intent);
-            }
-        });
+        mGetTrackingButton.setOnClickListener(this);
+    }
+
+    @Override
+    public void onClick(View v) {
+        if (v == mGetTrackingButton) {
+            Toast.makeText(MainActivity.this, "Let's go!", Toast.LENGTH_LONG).show();
+            Intent intent = new Intent(MainActivity.this, TrackingActivity.class);
+            startActivity(intent);
+        }
     }
 }
