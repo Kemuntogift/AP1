@@ -49,4 +49,14 @@
         app:layout_constraintTop_toBottomOf="@+id/introduction"
         app:layout_constraintVertical_bias="0.0" />
 
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="211dp"
+        android:layout_height="64dp"
+        android:text="Start Tracking ->"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/paragraph" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
