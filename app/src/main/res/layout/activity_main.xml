@@ -23,25 +23,30 @@
         android:id="@+id/introduction"
         android:layout_width="300dp"
         android:layout_height="58dp"
+        android:fontFamily="cursive"
         android:text="OnTheMove"
-        android:textColor="@color/orange"
+        android:textColor="@color/burnt_orange"
         android:textSize="50sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView"
-        app:layout_constraintVertical_bias="0.14" />
+        app:layout_constraintVertical_bias="0.132" />
 
     <TextView
         android:id="@+id/paragraph"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="TextView"
+        android:layout_width="261dp"
+        android:layout_height="124dp"
+        android:text="All in one parcel tracking partner. Tracking made easier and at the comfort of your phone."
+        android:textColor="@color/orange"
+        android:textSize="34sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintHorizontal_bias="0.704"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/introduction" />
+        app:layout_constraintTop_toBottomOf="@+id/introduction"
+        app:layout_constraintVertical_bias="0.0" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
