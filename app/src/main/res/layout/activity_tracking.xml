@@ -15,9 +15,18 @@
 
     <TextView
         android:id="@+id/attributes"
-        android:layout_width="wrap_content"
+        android:layout_width="244dp"
         android:layout_height="wrap_content"
-        android:text="TextView" />
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="81dp"
+        android:layout_marginEnd="86dp"
+        android:layout_marginBottom="386dp"
+        android:textStyle="bold"
+        android:text="Add the necessary information to make this process smooth for you"
+        android:textColor="@color/colorTextIcons"
+        android:textSize="20sp" />
 
     <EditText
         android:id="@+id/editTextTextPersonName2"
