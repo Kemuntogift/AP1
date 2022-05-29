@@ -54,6 +54,7 @@
         android:layout_width="211dp"
         android:layout_height="64dp"
         android:text="Start Tracking ->"
+        android:background="@color/success"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
