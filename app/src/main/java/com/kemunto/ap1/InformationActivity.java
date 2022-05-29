@@ -15,6 +15,7 @@ public class InformationActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_information);
+
         mPersonNameTextView = (TextView) findViewById(R.id.personNameTextView);
         mYourLocationTextView = (TextView) findViewById(R.id.yourLocationTextView);
         mItemSizeTextView = (TextView) findViewById(R.id.itemSizeTextView);
